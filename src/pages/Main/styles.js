@@ -31,7 +31,7 @@ export const Container = styled.div`
     border-radius: 4px;
 
     width: 210px;
-    height: 180px;
+    height: 100px;
 
     display: flex;
     justify-content: center;
