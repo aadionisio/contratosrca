@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, SubmitButton } from "./styles";
+import { Container } from "./styles";
 
 function Main() {
   return (
