@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Main from "./pages/Main";
 import ContractPj from "./reports/Contract_pj";
+import FriendlyTermination from "./reports/Friendly_termination";
 // import Repository from './pages/Repository';
 
 export default function Routes() {
@@ -12,6 +13,7 @@ export default function Routes() {
       <Switch>
         <Route path="/" exact component={Main} />
         <Route path="/contractpj/rep" component={ContractPj} />
+        <Route path="/ftpj/rep" component={FriendlyTermination} />
         {/* <Route path="/repository/:repository" component={Repository} /> */}
       </Switch>
     </BrowserRouter>

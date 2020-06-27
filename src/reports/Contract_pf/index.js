@@ -9,9 +9,7 @@ import {
   DateDocument,
 } from "./styles";
 
-function Contract_pj() {
-  const rca = "JOSE DE SOUSA";
-
+function Contract_pf() {
   function datePerExtension() {
     const data = new Date();
 
@@ -48,15 +46,13 @@ function Contract_pj() {
 
   return (
     <Container>
-      <Title> CONTRATO DE REPRESENTAÇÃO COMERCIAL – PESSOA JURIDICA </Title>
+      <Title> CONTRATO DE REPRESENTAÇÃO COMERCIAL – PESSOA FISICA </Title>
       <ContentTopic>
         Pelo presente instrumento particular de contrato de representação
-        comercial que entre si celebram, de um lado a Empresa Adelson Ferreira
-        Mota, localizada no Tupinamba Portela, 272A, bairro centro, inscrito no
-        CNPJ 36.646.427/0001-09, na cidade de Água Branca - PI, neste ato
-        representado pelo Sr. {rca}, CPF 010.077.623-06, RG 560177963 ,
-        residente e domiciliado Tupinamba Portela, 272A, bairro: centro, na
-        cidade de Agua Branca - PI{" "}
+        comercial que entre si celebram, de um lado Sr. PAULO ROBERTO DO
+        NASCIMENTO RODRIGUES CRUZ CPF 375.040.293-00, RG 1237391, residente e
+        domiciliado na AVENIDA DAS NORMALISTAS, 2067, Bairro NOVA PARNAIBA,
+        Cidade de PARNAIBA, Estado do PIAUÍ,
         <strong>SIMPLESMENTE DORAVANTE DESIGNADO REPRESENTANTE</strong>, e do
         outro lado a empresa EVANDRO COMERCIAL LTDA CNPJ 06.983.931/0004-86 e
         Insc. Estadual 19.473.228-2, localizada na Av. Dr. João Silva Filho, nº
@@ -445,4 +441,4 @@ function Contract_pj() {
   );
 }
 
-export default Contract_pj;
+export default Contract_pf;
