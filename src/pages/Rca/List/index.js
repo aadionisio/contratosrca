@@ -15,9 +15,40 @@ function Rca() {
   const [listRca, setListRca] = useState([]);
   const [loading, setLoading] = useState(false);
   const listaRca = [
-    { CODUSUR: "12", NOME: "JOSE DE SOUSA BRITO" },
-    { CODUSUR: "70", NOME: "CLEIDIVAN PEREIRA" },
-    { CODUSUR: "38", NOME: "ANTONIO ANDERSON" },
+    {
+      CODUSUR: "12",
+      NOME: "JOSE DE SOUSA BRITO",
+      FIRMA: "",
+      ENDERECO: "RUA MEXICO,168 BAIRRO: CJ.J.ESPE/CEARA",
+      CNPJ: "",
+      CIDADE: "PARNAIBA",
+      CPF: "181.486.543-87",
+      CI: "329647",
+      PRACAATEND: "PARNAIBA,LUIS CORREIA,ILHA GRANDE",
+    },
+    {
+      CODUSUR: "70",
+      NOME: "CLEIDIVAN PEREIRA",
+      FIRMA: "",
+      ENDERECO: "RESIDENCIAL CASA NOVA QD H CASA 3 BAIRRO: FREIHIGINO",
+      CNPJ: "",
+      CIDADE: "PARNAIBA",
+      CPF: "629.867.323-72",
+      CI: "1700356",
+      PRACAATEND: "PARNAIBA,LUIS CORREIA,ILHA GRANDE",
+      DATAADMISSAO: "20/02/2013",
+    },
+    {
+      CODUSUR: "38",
+      NOME: "ANTONIO ANDERSON",
+      FIRMA: "",
+      ENDERECO: "RUA MEXICO,168 BAIRRO: CJ.J.ESPE/CEARA",
+      CNPJ: "",
+      CIDADE: "PARNAIBA",
+      CPF: "181.486.543-87",
+      CI: "329647",
+      PRACAATEND: "PARNAIBA,LUIS CORREIA,ILHA GRANDE",
+    },
   ];
 
   function handleChange(event) {
@@ -67,7 +98,23 @@ function Rca() {
               <span> {item.NOME}</span>
             </div>
             <div className="botoes">
-              <Link className="button" to={`#`}>
+              <Link
+                className="button"
+                to={{
+                  pathname: "/edit",
+                  state: {
+                    codusur: item.CODUSUR,
+                    nome: item.NOME,
+                    firma: item.FIRMA,
+                    endereco: item.ENDERECO,
+                    cnpj: item.CNPJ,
+                    cidade: item.CIDADE,
+                    cpf: item.CPF,
+                    ci: item.CI,
+                    pracaatend1: item.PRACAATEND,
+                  },
+                }}
+              >
                 Editar
               </Link>
               <Link className="button" to={`#`}>
